@@ -6,5 +6,9 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    //
+    public function index ()
+    {
+        $message = 'Hello World';
+        return view('home.index', ['message' => $message]);
+    }
 }
